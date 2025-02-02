@@ -1,0 +1,32 @@
+vehicle_researcher_task:
+  description: >
+    Conduct a thorough research about {input}
+    Make sure you find any interesting and relevant , review information given
+    the current year is 2025.Dont exceed more than 500 words.
+  expected_output: >
+    A list with 10 bullet points of the most relevant information about {input}
+  agent: vehicle_market_researcher
+
+vehicle_analyst_task:
+  description: >
+    Review the context you got and expand each topic into a full section and focus on the key points 
+    for the advisor to make the decision and recommend. DOnt exceed more than 500 words.
+  expected_output: >
+    A clear list of your analysis based on the chosen topic and context received. Dont exceed more than 500 words.
+  agent: vehicle_analyst
+
+vehicle_advisor_task:
+  description: >
+    Review the context you got and recommend the best course of action based on the analysis.
+  expected_output: >
+    A clear list of recommendations based on the chosen topic and context received. Dont exceed more than 500 words.
+  agent: vehicle_advisor
+
+vehicle_report_writer_task:
+  description: >
+    Review the context you got and expand each topic into a full section for a report.
+    Make sure the report is clear and crisp and not so detailed. SHould not exceed more than 500 words.
+  expected_output: >
+    A fully fledged report with the main topics, each with a full section of information.
+    Formatted as markdown without '```'
+  agent: vehicle_report_writer
